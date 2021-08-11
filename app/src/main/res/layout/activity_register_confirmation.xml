@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.RegisterConfirmation"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtPassUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/black_ops_one"
+            android:text="@string/registration_nconfirmation"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="37sp" />
+        <ImageView
+            android:id="@+id/imgtick"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_item"
+            android:contentDescription="@string/showing_confirmation"
+            android:padding="5dp"
+            android:src="@drawable/tick" />
+        <TextView
+            android:id="@+id/txtEnterdetailsMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/courgette"
+            android:text="@string/your_account_has_been_succesfully_created"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+
+

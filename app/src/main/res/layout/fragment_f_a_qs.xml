@@ -1,0 +1,63 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fragment.FAQs">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/txtFirstQue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/radley"
+        android:text="@string/firstque"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/txtSecondQue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secondque"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/radley"/>
+    <TextView
+        android:id="@+id/txtThirdQue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thirdque"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/radley"/>
+    <TextView
+        android:id="@+id/txtFourthQue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fourthque"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/radley"/>
+    <TextView
+        android:id="@+id/txtFifthQue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/radley"
+        android:text="@string/fifthque"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.SplashActivity"
+    android:background="@drawable/bg_gradient">
+    <ImageView
+        android:id="@+id/imgBookLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/book_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:padding="2dp"
+        android:background="@drawable/bg_image" />
+    <TextView
+        android:id="@+id/txtMiniLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBookLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/courgette"
+        android:text="@string/splash_mini_library"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.Login"
+    android:background="@drawable/bg_gradient"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/black_ops_one"
+        android:text="@string/welcome_to_mini_library"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgYummyLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtWelcome"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_image"
+        android:src="@drawable/book_logo"
+        android:contentDescription="@string/login_app_logo" />
+
+    <EditText
+        android:id="@+id/etUserMobileNo"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="7dp"
+        android:fontFamily="@font/radley"
+        android:inputType="phone"
+        android:hint="@string/login_enter_your_mobile_no_here"
+        android:textColor="#000000"
+        android:layout_margin="10dp"
+        android:textAlignment="textStart"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgYummyLogo"
+        android:textSize="15sp"
+        android:background="@drawable/bg_item"
+        android:drawableStart="@drawable/ic_mobile"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/login_enter_your_password_here"
+        android:textColor="#000000"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/radley"
+        android:layout_below="@id/etUserMobileNo"
+        android:background="@drawable/bg_item"
+        android:textSize="15sp"
+        android:padding="7dp"
+        android:textAlignment="textStart"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="7dp"
+        />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etPassword"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:background="@drawable/bg_button"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkboxLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:text="@string/keep_me_logged_in"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/radley"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxLogin"
+        android:layout_marginTop="7dp"
+        android:text="@string/login_forget_password"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/radley"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_not_registered_sign_up_now"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/radley"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtForgetPassword"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-81dp"
+        >
+
+    </ProgressBar>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="45dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/txtWelcome"
+        android:src="@drawable/book_gif" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.ForgotPassSuccess"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/txtPassUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/black_ops_one"
+            android:text="@string/for_pass_succ_password_nupdated"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="35sp" />
+        <ImageView
+            android:id="@+id/imgtick"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_item"
+            android:src="@drawable/tick"
+            android:padding="5dp"
+            android:contentDescription="@string/showing_confirmation" />
+        <TextView
+            android:id="@+id/txtEnterdetailsMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/your_password_has_been_updated"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/courgette"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_for_pass_succ_login"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</LinearLayout>
+
